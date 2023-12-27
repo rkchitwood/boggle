@@ -1,0 +1,82 @@
+.cell{
+    border: 1px solid black;
+    font-size: large;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-color: rgb(255, 176, 85);
+}
+
+#boardcontainer{
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    align-items: center;
+    justify-content: center;
+}
+body{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(149, 149, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input[type=submit],input[type=text]{
+    font-size: large;
+    background-color: rgb(255, 176, 85);
+    border-radius: 3px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+#scoretracker{
+    text-align: left;
+    margin-right: 5px;
+}
+#timelabel{
+    text-align: right;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+#timevalue{
+    flex-shrink: 0;
+    flex-grow: 0;
+    min-width: 20px;
+}
+#logo{
+    text-align: center;
+    margin-left: 5%;
+}
+#timetracker{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+button{
+    background-color: rgb(255, 176, 85);
+    border-radius: 3px;
+    
+}
+a{
+    text-decoration: none;
+}
+button:hover{
+    background-color: rgb(252, 136, 3);
+}
+#messagecontainer{
+    min-height: 20px;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(252, 136, 3);
+}
+#highscore{
+    text-align: left;
+    display: flex;
+}
+#highscorevalue{
+    margin-left: 5px;
+}

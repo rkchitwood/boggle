@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TITLE  HERE{% endblock %}</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div id='logo'><h1>Boggle</h1></div>
+    <div class='header'>
+        <div id='scoretracker'>Your Score: </div>
+        <div id="scorevalue"></div>
+        <div id="timetracker">
+            <div id='timelabel'>Time Remaining: </div>
+            <div id="timevalue">60</div>
+        </div>
+    </div>
+    <div id="highscore">High Score:<div id="highscorevalue"></div></div>
+    {% block content %}
+    CONTENT HERE
+    {% endblock %}
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Boggle{% endblock %}
+{% block content %}
+<div id="boardcontainer">
+    {% for row in board_data %}
+        <div class="row">
+            {% for cell in row %}
+                <div class="cell">{{ cell }}</div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div><br>
+<form id="guess-form">
+    <input type="text" name="guess" placeholder="Enter your word here!"/>
+    <input type="submit" value="Submit!"/>
+</form><br>
+<div id="messagecontainer"></div>
+{% endblock %}
